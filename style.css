@@ -1,0 +1,103 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top left,#1EE5A9, #6C3DC2, #A16151);
+    font-family: 'Clarity City', sans-serif;
+    font-display: swap;
+    height: inherit;
+}
+
+.wrapper{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    flex-basis: 400px;
+    height: 540px;
+    padding: 20px 35px;
+}
+
+.result{
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(35, 35, 35, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.01);
+    color: #232323;
+    font-size: 35px;
+    overflow: auto;
+    padding: 20px;
+    text-align: right;
+    
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.cbutton, .cbuttondouble, .cbuttontriple{
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(35, 35, 35, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    flex-basis: 20%;
+    font-family: inherit;
+    font-size: 24px;
+    height: 65px;
+}
+
+.cbutton:last-child{
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(35, 35, 35, 0.1);
+    border-radius: 16px;
+    background: #6C3DC2;
+    color: #ffff;
+}
+
+.cbutton:last-child:hover{
+    background: #03F903;
+    color: blue;
+}
+.cbutton:hover{
+    background: black;
+    color: white;
+}
+.cbuttondouble:hover, .cbuttontriple:hover{
+    background: orange;
+    color: #0307F9;
+}
+
+.cbuttondouble{
+    flex-basis: 45%;
+}
+
+.cbuttontriple{
+    flex-basis: 73%;
+}
